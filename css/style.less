@@ -68,7 +68,7 @@
     border-color: #000;
     color: #000;
     border-width: 2px;
-    font-weight: 500;
+    font-weight: 600;
 
     &:hover {
         background-color: #000;
@@ -162,13 +162,16 @@ body {
     border: none;
     -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
-    &--featured {
+    .card__desc {
+        opacity: 0.7;
+    }
+
+    &:hover {
         background: linear-gradient(to top right, #f39c2b 0%, #ffd298 100%);
-
-        .card__desc {
-            opacity: 0.7;
-        }
     }
 }
 
