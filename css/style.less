@@ -67,6 +67,8 @@
 .btn-outline-warning {
     border-color: #000;
     color: #000;
+    border-width: 2px;
+    font-weight: 500;
 
     &:hover {
         background-color: #000;
@@ -80,6 +82,9 @@ body {
     background: url('../images/bg-site.png') center top no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 #site-header {
@@ -94,18 +99,22 @@ body {
     padding: 0.5rem 0 !important;
     background-color: #fff;
     border-bottom: 1px solid #eee;
-    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.07);
 
     #logo {
-        height: 48px;
-        width: 184px;
+        height: 40px;
+        width: 125px;
+    }
+
+    .btn {
+        margin-top: 0 !important;
     }
 }
 
 #logo {
     height: 64px;
-    width: 245px;
+    width: 200px;
     background-repeat: no-repeat;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -151,8 +160,8 @@ body {
     -o-border-radius: 8px;
     border-radius: 8px;
     border: none;
-    -webkit-box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
 
     &--featured {
         background: linear-gradient(to top right, #f39c2b 0%, #ffd298 100%);
