@@ -72,7 +72,7 @@
 
     &:hover {
         background-color: #000;
-        color: #ffc107;
+        color: #fff;
         border-color: #000;
     }
 }
@@ -104,7 +104,7 @@ body {
 
     #logo {
         height: 40px;
-        width: 125px;
+        width: 142px;
     }
 
     .btn {
@@ -114,7 +114,7 @@ body {
 
 #logo {
     height: 64px;
-    width: 200px;
+    width: 227px;
     background-repeat: no-repeat;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -171,14 +171,32 @@ body {
             height: 70px;
             width: auto;
         }
+
+        .active {
+            opacity: 0;
+            display: none;
+            -webkit-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
     }
 
     &__desc {
-        opacity: 0.7;
+        opacity: 0.8;
     }
 
     &:hover {
-        background: linear-gradient(to top right, #f39c2b 0%, #ffd298 100%);
+        color: white;
+        background: linear-gradient(to top right, #E06E11 0%, #F96810 100%);
+
+        img {
+            display: none;
+        }
+
+        .active {
+            display: inline;
+            opacity: 1;
+        }
     }
 }
 
@@ -195,4 +213,10 @@ body {
 #site-footer {
     background: url('../images/bg-footer.png') bottom center no-repeat;
     padding: 204px 0 48px;
+    color: white;
+
+    .text-muted {
+        color: white !important;
+        opacity: 0.8;
+    }
 }
